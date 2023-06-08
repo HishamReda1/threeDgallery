@@ -15,7 +15,7 @@ if (navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)) {
 }
 var fovY = () => 2 * Math.atan(Math.tan(fovX() * 0.5) * window.innerHeight / window.innerWidth);
 
-const Stats = require('stats.js');
+import Stats from 'stats.js';
 var stats = new Stats();
 stats.showPanel(0);
 if(showStats) {
